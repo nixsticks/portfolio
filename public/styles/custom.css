@@ -1,0 +1,65 @@
+body {
+  background-color: ivory;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 20px; 
+}
+
+header h1, header h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.self {
+  max-width: 150px;
+}
+
+.image-small {
+  height: 100px;
+  width: auto;
+}
+
+.image-links {
+  height: 200px;
+  width: auto;
+}
+
+.about {
+  overflow: auto;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.projects,
+.links {
+  padding-bottom: 20px; 
+  overflow: auto;
+  width: 100%;
+}
+
+.gameoflife,
+.emergencypusheen,
+.hilariousquiz,
+.stillsad,
+.rubyroulette {
+  overflow: auto;
+  width: 100%;
+}

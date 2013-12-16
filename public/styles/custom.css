@@ -2,59 +2,45 @@ body {
   background-color: ivory;
 }
 
-header {
+header, footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-footer {
-  padding-top: 50px;
-  padding-bottom: 20px; 
-}
-
-header h1, header h2 {
-  text-align: center;
-}
-
-h4 {
+h1, h2, h4 {
   text-align: center;
 }
 
 a {
   text-decoration: none;
+  color: #777;
+/*  text-shadow: 0px 1px 1px #555;*/
+}
+
+footer a {
+  color: #181818;
 }
 
 .self {
   max-width: 150px;
 }
 
-.image-small {
-  height: 100px;
-  width: auto;
-}
-
+.image-small,
 .image-links {
   height: 100px;
   width: auto;
 }
 
-.about {
-  overflow: auto;
-  width: 100%;
-  padding-bottom: 20px;
-}
-
+.about,
+.projects,
+.links,
 .title {
   padding-bottom: 20px;
 }
 
+.about,
 .projects,
-.links {
-  padding-bottom: 20px; 
-  overflow: auto;
-  width: 100%;
-}
-
+.links,
 .gameoflife,
 .emergencypusheen,
 .hilariousquiz,

@@ -3,6 +3,8 @@ GEM
   specs:
     bond (0.4.3)
     bootstrap (0.0.1)
+    haml (4.0.4)
+      tilt
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
@@ -34,6 +36,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap
+  haml
   shotgun
   sinatra
   tux

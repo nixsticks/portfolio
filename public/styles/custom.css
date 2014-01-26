@@ -38,6 +38,10 @@ footer a {
   padding-bottom: 20px;
 }
 
+.projects .columns, .links .columns {
+  text-align: center;
+}
+
 .about,
 .projects,
 .links,
@@ -48,4 +52,8 @@ footer a {
 .rubyroulette {
   overflow: auto;
   width: 100%;
+}
+
+.hidden {
+  display: none;
 }

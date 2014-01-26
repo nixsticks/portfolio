@@ -4,7 +4,7 @@ Bundler.require
 module Portfolio
   class App < Sinatra::Application
     get '/' do
-      erb :index
+      haml :index
     end
   end
 end

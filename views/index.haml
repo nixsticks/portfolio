@@ -10,115 +10,200 @@
     %p I've worked in <a href="http://imshealth.com">pharmaceutical consulting</a> and <a href="http://foliolit.com">literary management</a>, where I taught myself VBA and decided I might actually like this programming thing. Other fun things I've done include singing at Carnegie Hall with the <a href="http://www.oratoriosocietyofny.org/">Oratorio Society of New York</a>, attending the <a href="http://www.squawvalleywriters.org/">Community of Writers at Squaw Valley</a>, studying writing under Jeffrey Eugenides and Joyce Carol Oates, and learning acrobatics at <a href="/images/circus.jpg">circus school</a>.
     %p Now I'm a <a href="http://flatironschool.com/nycworkforce1/">Web Development Fellow</a> at the <a href="http://flatironschool.com/">Flatiron School</a>.
 
+.featured
+  .sixteen.columns.title
+    %h4 FEATURED PROJECTS
+
+  .row
+    .two.columns.offset-by-two
+      %img{src: "/images/compass.png", class: "image-small"}
+      
+    .ten.columns
+      %p
+        %strong geotreasure (current project: link to come!)
+        %br
+        Geotreasure is a hybrid treasure hunt/tourism app, inspired by the concept of geocaching, that allows participants to create trails for others to follow &#8212; from anywhere in the world, to anywhere in the world. Using mobile phones or other portable devices, trail followers can check in at any given location to discover buried treasure in the form of videos, audio, images, and text left as a reward by the trail's creator.
+      %p Geotreasure is a <strong>work in progress</strong>, created as a Rails project with my partner Oliver Switzer at the Flatiron School. In order to work extensively with the Google Maps API, I taught myself basic JavaScript and am continuing to learn every day. We have our database and user workflow complete, and are currently working on finishing up styling!
+
+  .row
+    .two.columns.offset-by-two
+      %a{href: "http://set-game.herokuapp.com/games/students/set/set", target: "blank"}
+        %img{src: "/images/playing-cards.png", class: "image-small"}
+
+    .ten.columns
+      %p
+        %strong set: the game
+        %br
+        As an exercise in learning front-end, I created an entirely client-side implementation of the classic game <a href="http://en.wikipedia.org/wiki/Set_(game)">Set</a> using the backend Gambit engine created by class instructor Ashley Williams. 
+      %p Then, since it's no fun to play alone, I made a multiplayer version using websockets, allowing you to play with as many friends as you want -- on separate computers, in any location. You can play that version <a href="http://multiplayer-set.herokuapp.com/">here</a>.
+
+  .row
+    .two.columns.offset-by-two
+      %a{href: "http://nixsticks.github.io/worldmaps/spinningglobe.html", target: "blank"}
+        %img{src: "/images/globe.png", class: "image-small"}
+
+    .ten.columns
+      %p
+        %strong d3 globe
+        %br
+        This is a simple click-and-drag rotating globe made with the amazing d3 and topojson libraries and data from the Natural Earth library. It was made on the second day I started learning d3, which should explain its simplicity. I'm fascinated with the way d3 allows you to transform data into complex visualizations -- without having to be a data scientist. Expect more maps to come soon.
+
+  .row
+    .two.columns.offset-by-two
+      %a{href: "http://watch-withme.herokuapp.com", target: "blank"}
+        %img{src: "/images/video.png", class: "image-small", data:{target: "video"}}
+
+    .ten.columns
+      %p
+        %strong watch with me 
+        %br
+        In November, one of our instructors tried to use a YouTube video tutorial in lecture, but we were unable to watch it on the projector because the sound was too low. Although we tried to watch it in sync with him on our separate computers, it quickly became impossible to tell if we were all at the right point.
+      %p Enter watchwithme, a video-syncing application that allows you to watch YouTube videos with friends or classmates -- and chat about them in the same window -- on separate computers, perfectly in sync. I used websockets and the YouTube JavaScript API to synchronize the videos, Redis to temporarily store the locations of the separate viewing rooms, and Sinatra to power the app itself.
+
+  .row
+    .two.columns.offset-by-two
+      %a{href: "http://clapforashley.com", target: "blank"}
+        %img{src: "/images/clap.png", class: "image-small", data: {target: "ashley"}}
+
+    .ten.columns
+      %p
+        %strong clap for ashley
+        %br
+        Our class decided to make a website to surprise instructor Ashley Williams, an avid user of Twitter. This website lies dormant until Ashley sends out a tweet -- or until any Twitter user sends out the class in-joke hashtag #clapforashley -- upon which the screen fills with the images and sounds of applause.
+      %p This was a group effort; I kicked things off by setting up the backend and the oauth for Twitter, which (again!) uses websockets so the effect is instantaneous, and we don't have to constantly query the Twitter streaming API.
+
 .projects
   .sixteen.columns.title
-    %h4 RECENT PROJECTS
+    %h4 OTHER PROJECTS
+    %p{class: "center"} (click for more information)
 
   .three.columns.offset-by-two
-    %a{href: "http://watch-withme.herokuapp.com", target: "blank"}
-      %img{src: "/images/video.png", class: "image-small"}
-    %p
-      %strong watch with me
-      %br
-      synchronizes videos to watch with friends on different computers
-
-  .three.columns
-    %a{href: "http://compliment-mailbox.herokuapp.com", target: "blank"}
-      %img{src: "/images/envelope.png", class: "image-small"}
-    %p
-      %strong compliment mailbox
-      %br
-      a little project for my class to send compliments to one another
-
-  .three.columns
-    %a{href: "http://clapforashley.com", target: "blank"}
-      %img{src: "/images/clap.png", class: "image-small"}
-    %p
-      %strong clap for ashley
-      %br
-      made for instructor ashley williams with BK-000
-
-  .three.columns
     %a{href: "http://blakeisaweso.me", target: "blank"}
-      %img{src: "/images/blake.jpeg", class: "image-small"}
+      %img{src: "/images/blake.jpeg", class: "image-small dropdown", data: {target: "blake"}}
     %p
       %strong blake is awesome
-      %br
-      made for instructor blake johnson with BK-000
-
-.descriptions
-  .nine.columns.offset-by-two
-    #video.hidden
-      %p Some stuff about the video project
-
-    #mailbox.hidden
-      %p Compliment Mailbox
-
-.projects
-  .three.columns.offset-by-two
-    %a{href: "http://conways-gameoflife.herokuapp.com", target: "blank"}
-      %img{src: "/images/beehives.png", class: "image-small"}
-    %p
-      %strong conway's game of life
-      %br
-      a ruby implementation of a classic programming challenge
 
   .three.columns
-    %a{href: "http://emergency-pusheen.herokuapp.com", target: "blank"}
-      %img{src: "/images/pusheen.png", class: "image-small"}
+    %img{src: "/images/envelope.png", class: "image-small dropdown", data: {target: "mailbox"}}
     %p
-      %strong emergency pusheen
-      %br
-      inspired by <a href="http://pusheen.com" target="blank">pusheen</a> and <a href="http://emergencycompliment.com">emergency compliment</a>
+      %strong compliment mailbox
+
+  .three.columns
+    %a{href: "http://conways-gameoflife.herokuapp.com", target: "blank"}
+      %img{src: "/images/beehives.png", class: "image-small dropdown", data: {target: "gameoflife"}}
+    %p
+      %strong conway's game of life
 
   .three.columns
     %a{href: "http://sinatra-playlister.herokuapp.com", target: "blank"}
-      %img{src: "/images/playlist.png", class: "image-small"}
+      %img{src: "/images/playlist.png", class: "image-small dropdown", data: {target: "playlister"}}
     %p
       %strong youtube playlister
-      %br
-      embeds youtube videos using the youtube api
 
-  .three.columns
-    %a{href: "http://team-kickass.herokuapp.com/", target: "blank"}
-      %img{src: "/images/ruby.png", class: "image-small"}
-    %p
-      %strong ruby roulette
-      %br
-      a resource for beginners, created on the first day of the flatiron school
+.descriptions
+  .ten.columns.offset-by-three
+    #blake.hidden
+      %h4 The Most Interesting Man in the World
+      %p The class made this website as a surprise for instructor Blake Johnson, parodying the famous Dos Equis ad. I set up the jQuery that fades the lines in and out, and allows you to replay the entire commercial at the end.
+      .center
+        %a{href: "http://blakeisaweso.me", class: "btn btn-default", target: "blank"} Check it out!
+
+    #mailbox.hidden
+      %h4 Compliment Mailbox
+      %p This was a quick project, whipped up in the course of one evening in an attempt to learn to roll my own user authentication system in Rails (courtesy of Michael Hartl's tutorial) and to learn how to make a basic messaging system in Rails.
+      .center
+        %a{href: "http://compliment-mailbox.herokuapp.com", class: "btn btn-default", target: "blank"} Check it out!
+
+    #gameoflife.hidden
+      %h4 Conway's Game of Life
+      %p This was a much earlier project, started when I was just beginning to learn Ruby. I use AJAX to regularly retrieve the current positions and states of the cells from the server. Now that I know more JavaScript and jQuery, I would love to remake this app sometime with the logic in the front-end, just to see if I can. Also on the list: a hybrid app that retrieves the initial cell patterns and states from the server, and then executes logic in the front-end to play the game without AJAX.
+      .center
+        %a{href: "http://conways-gameoflife.com", class: "btn btn-default", target: "blank"} Check it out!
+
+    #playlister.hidden
+      %h4 Youtube Playlister
+      %p Another early project. We were given a list of songs and asked to make a playlister engine from them; I decided to take it a step further by using the YouTube search API to embed videos for each of the songs.
+      .center
+        %a{href: "http://sinatra-playlister.herokuapp.com", class: "btn btn-default", target: "blank"} Check it out!
 
 .projects
   .three.columns.offset-by-two
     %a{href: "http://pokemon-ajax.herokuapp.com", target: "blank"}
-      %img{src: "/images/Bulbasaur.png", class: "image-small"}
+      %img{src: "/images/Bulbasaur.png", class: "image-small dropdown", data: {target: "pokemon"}}
     %p
       %strong pokemon
-      %br
-      an exercise in web scraping and asynchronous loading... with pokemon!
+
+  .three.columns
+    %a{href: "http://emergency-pusheen.herokuapp.com", target: "blank"}
+      %img{src: "/images/pusheen.png", class: "image-small dropdown", data: {target: "pusheen"}}
+    %p
+      %strong emergency pusheen
+
+  .three.columns
+    %a{href: "http://team-kickass.herokuapp.com/", target: "blank"}
+      %img{src: "/images/ruby.png", class: "image-small dropdown", data: {target: "ruby"}}
+    %p
+      %strong ruby roulette
 
   .three.columns
     %a{href: "http://are-you-still-sad.herokuapp.com", target: "blank"}
-      %img{src: "/images/stillsad.png", class: "image-small"}
+      %img{src: "/images/stillsad.png", class: "image-small dropdown", data: {target: "stillsad"}}
     %p
       %strong are you still sad?
-      %br
-      uses nokogiri to collect odd compliments and cool cats from the interwebs.
 
-  .three.columns
+.descriptions
+  .ten.columns.offset-by-three
+    #pokemon.hidden
+      %h4 Pokemon!
+      %p Early project: a recreation of the first few steps of the classic Pokemon Red. (Always my favorite.) Using Nokogiri, I scraped information and images from <a href="http://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a> -- information on every single Pokemon -- to create my own PokeDex. Then I put it online.
+      .center
+        %a{href: "http://pokemon-ajax.com", class: "btn btn-default", target: "blank"} Check it out!
+
+    #pusheen.hidden
+      %h4 Emergency Pusheen
+      %p One of our earliest projects: a randomly generated emergency compliment, inspired by <a href="http://emergencycompliment.com/">emergency compliment.com</a>. This one is Pusheen-flavored.
+      .center
+        %a{href: "http://emergency-pusheen.herokuapp.com", class: "btn btn-default", target: "blank"} Check it out!
+
+    #ruby.hidden
+      %h4 Ruby Roulette
+      %p Made on the very first day of the Flatiron School -- a resource-sharing app for Ruby beginners.
+      .center
+        %a{href: "http://team-kickass.herokuapp.com", class: "btn btn-default", target: "blank"} Check it out!
+
+    #stillsad.hidden
+      %h4 Are You Still Sad?
+      %p An extension of the emergency compliment assignment, made with a partner, using images and text scraped from the web. We thought it was pretty funny.
+      %p Before you say it: I need to get her to change the spelling in the title.
+      .center
+        %a{href: "http://are-you-still-sad.herokuapp.com", class: "btn btn-default", target: "blank"} Check it out!
+
+.projects
+  .three.columns.offset-by-five
     %a{href: "http://hilarious-quiz.herokuapp.com", target: "blank"}
-      %img{src: "/images/doge.png", class: "image-small"}
+      %img{src: "/images/doge.png", class: "image-small dropdown", data: {target: "hilarious"}}
     %p
       %strong hilarious quiz
-      %br
-      are you ashley, the internet wizard, or blake, the world traveler?
 
   .three.columns
     %a{href: "http://isittoday.herokuapp.com", target: "blank"}
-      %img{src: "/images/christmas.png", class: "image-small"}
+      %img{src: "/images/christmas.png", class: "image-small dropdown", data: {target: "holiday"}}
     %p
       %strong is it today?
-      %br
-      need to know whether to go to work today? check right here.
+
+.descriptions
+  .ten.columns.offset-by-three
+    #hilarious.hidden
+      %h4 Hilarious Quiz
+      %p A first exercise in using HTML forms; I use haml to randomly order the answers rather than hard-coding them.
+      .center
+        %a{href: "http://hilarious-quiz.herokuapp.com", class: "btn btn-default", target: "blank"} Check it out!
+
+    #holiday.hidden
+      %h4 Is It Today?
+      %p An exercise in using the Ruby date and time classes, with public holiday information scraped from the web!
+      .center
+        %a{href: "http://isittoday.herokuapp.com", class: "btn btn-default", target: "blank"} Check it out!
 
 .links
   .sixteen.columns.title

@@ -58,7 +58,8 @@
         %strong watch with me 
         %br
         In November, one of our instructors tried to use a YouTube video tutorial in lecture, but we were unable to watch it on the projector because the sound was too low. Although we tried to watch it in sync with him on our separate computers, it quickly became impossible to tell if we were all at the right point.
-      %p Enter watchwithme, a video-syncing application that allows you to watch YouTube videos with friends or classmates -- and chat about them in the same window -- on separate computers, perfectly in sync. I used websockets and the YouTube JavaScript API to synchronize the videos, Redis to temporarily store the locations of the separate viewing rooms, and Sinatra to power the app itself.
+      %p Enter watchwithme, a video-syncing application that allows you to watch YouTube videos with friends or classmates -- and chat about them in the same window -- on separate computers, perfectly in sync. The person who starts the room controls the video, and other watchers' videos are synchronized to it.
+      %p I used websockets and the YouTube JavaScript API to synchronize the videos, Redis to temporarily store the locations of the separate viewing rooms, and Sinatra to power the app itself.
 
   .row
     .two.columns.offset-by-two

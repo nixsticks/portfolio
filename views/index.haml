@@ -32,7 +32,8 @@
 
     .ten.columns
       %p
-        %strong set: the game
+        %a{href: "http://set-game.herokuapp.com/games/students/set/set", target: "blank"}
+          %strong set: the game
         %br
         As an exercise in learning front-end, I created a client-side implementation of the classic game <a href="http://en.wikipedia.org/wiki/Set_(game)">Set</a>. I thought this particular game would be interesting, given the relative complexity of the rules compared to simpler pattern-matching games.
       %p Then, since it's no fun to play alone, I made a multiplayer version using websockets, allowing you to play with as many friends as you want &#8212; on separate computers, in any location. You can play that version <a href="http://multiplayer-set.herokuapp.com/">here</a>.
@@ -44,7 +45,8 @@
 
     .ten.columns
       %p
-        %strong learn your countries
+        %a{href: "http://nixsticks.github.io/worldmaps/light-up-globe.html", target: "blank"}
+          %strong learn your countries
         %br
         My second project with d3, building on the first (directly below). As your mouse moves over each country on the rotating globe, its land mass lights up and its name appears on screen. An intuitive way to brush up on your geography.
 
@@ -55,7 +57,8 @@
 
     .ten.columns
       %p
-        %strong d3 globe
+        %a{href: "http://nixsticks.github.io/worldmaps/spinningglobe.html", target: "blank"}
+          %strong d3 globe
         %br
         This is a simple click-and-drag rotating globe made with the amazing d3 and topojson libraries and data from the Natural Earth library. It was made on the second day I started learning d3, which should explain its simplicity. I'm fascinated with the way d3 allows you to transform data into complex visualizations &#8212; without having to be a data scientist. Expect more maps to come soon.
 
@@ -66,7 +69,8 @@
 
     .ten.columns
       %p
-        %strong watchwithme 
+        %a{href: "http://watch-withme.herokuapp.com", target: "blank"}
+          %strong watchwithme 
         %br
         In November, one of our instructors tried to use a YouTube video tutorial in lecture, but we were unable to watch it on the projector because the sound was too low. Although we tried to watch it in sync with him on our separate computers, it quickly became impossible to tell if we were all at the right point.
       %p Enter watchwithme, a video-syncing application that allows you to watch YouTube videos with friends or classmates &#8212; and chat about them in the same window &#8212; on separate computers, perfectly in sync. The person who starts the room controls the video, and other watchers' videos are synchronized to it.
@@ -79,7 +83,8 @@
 
     .ten.columns
       %p
-        %strong clap for ashley
+        %a{href: "http://clapforashley.com", target: "blank"}
+          %strong clap for ashley
         %br
         Our class decided to make a website to surprise instructor Ashley Williams, an avid user of Twitter. This website lies dormant until Ashley sends out a tweet &#8212; or until any Twitter user sends out the class in-joke hashtag #clapforashley &#8212; upon which the screen fills with the images and sounds of applause.
       %p This was a group effort; I kicked things off by setting up the backend and the oauth for Twitter, which (again!) uses websockets so the effect is instantaneous.

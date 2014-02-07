@@ -63,6 +63,10 @@ footer a {
   padding-bottom: 20px;
 }
 
+.projects img {
+  cursor: pointer;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 0;

@@ -27,6 +27,18 @@
 
   .row
     .two.columns.offset-by-two
+      %a{href: "http://geography-quiz.herokuapp.com/world_quiz", target: "blank"}
+        %img{src: "/images/carmensandiego.png", class: "image-small"}
+
+    .ten.columns
+      %p
+        %a{href: "http://geography-quiz.herokuapp.com/world_quiz", target: "blank"}
+          %strong geography quiz
+        %br
+        I love maps. There are three globes on my portfolio! Building off the last two d3 map projects, I decided to take it a step further and animate my globe, making a geography quiz that's fun and interactive. The globe image is generated from GeoJSON data. On the backend, a database of answers is tied to the countries on the map, allowing you to see what other users got right... or wrong.
+
+  .row
+    .two.columns.offset-by-two
       %a{href: "http://set-game.herokuapp.com/games/students/set/set", target: "blank"}
         %img{src: "/images/playing-cards.png", class: "image-small"}
 
@@ -37,18 +49,6 @@
         %br
         As an exercise in learning front-end, I created a client-side implementation of the classic game <a href="http://en.wikipedia.org/wiki/Set_(game)">Set</a>. I thought this particular game would be interesting, given the relative complexity of the rules compared to simpler pattern-matching games.
       %p Then, since it's no fun to play alone, I made a multiplayer version using websockets, allowing you to play with as many friends as you want &#8212; on separate computers, in any location. You can play that version <a href="http://multiplayer-set.herokuapp.com/">here</a>.
-
-  .row
-    .two.columns.offset-by-two
-      %a{href: "http://geography-quiz.herokuapp.com/world_quiz", target: "blank"}
-        %img{src: "/images/carmensandiego.png", class: "image-small"}
-
-    .ten.columns
-      %p
-        %a{href: "http://geography-quiz.herokuapp.com/world_quiz", target: "blank"}
-          %strong geography quiz
-        %br
-        I love maps. There are three globes on my portfolio! Building off the last two projects, I decided to take it a step further and animate my globe, making a geography quiz that's fun and interactive. On the backend, a database of answers is tied to the countries on the map, allowing you to see what other users got right... or wrong.
 
   .row
     .two.columns.offset-by-two

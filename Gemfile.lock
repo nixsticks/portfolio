@@ -5,6 +5,7 @@ GEM
     bootstrap (0.0.1)
     haml (4.0.4)
       tilt
+    newrelic_rpm (3.7.2.195)
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
@@ -37,6 +38,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap
   haml
+  newrelic_rpm
   shotgun
   sinatra
   tux

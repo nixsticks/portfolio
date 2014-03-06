@@ -1,0 +1,27 @@
+# Logfile created on 2014-03-05 20:47:23 -0500 by logger.rb/36483
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Starting the New Relic agent in "development" environment.
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Reading configuration from config/newrelic.yml
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Enabling the Request Sampler.
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Environment: development
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Dispatcher: webrick
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Application: My Application
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] WARN : Agent configured not to send data in this environment.
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Installing Net instrumentation
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Installing Sinatra instrumentation
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Installing deferred Rack instrumentation
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Finished instrumentation
+[03/05/14 20:47:23 -0500 new-host-2.home (75492)] INFO : Doing deferred dependency-detection before Rack startup
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Starting the New Relic agent in "development" environment.
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Reading configuration from config/newrelic.yml
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Enabling the Request Sampler.
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Environment: development
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Dispatcher: webrick
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Application: My Application
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] WARN : Agent configured not to send data in this environment.
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Installing Net instrumentation
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Installing Sinatra instrumentation
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Installing deferred Rack instrumentation
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Finished instrumentation
+[03/05/14 20:51:06 -0500 new-host-2.home (76756)] INFO : Doing deferred dependency-detection before Rack startup

@@ -27,13 +27,25 @@
 
   .row
     .two.columns.offset-by-two
+      %a{href: "http://palebluedot.herokuapp.com/solarsystem", target: "blank"}
+        %img{src: "/images/planets.png", class: "image-small"}
+
+    .ten.columns
+      %p
+        %a{href: "http://palebluedot.herokuapp.com/solarsystem", target: "blank"}
+          %strong solar system tour
+        %br
+        An animated 3D model of the solar system, created in THREE.js with textures downloaded from <a href="http://planetpixelemporium.com/">planetpixelemporium</a>. View the solar system from three different perspectives: infinite, orthographic and from the perspective of the Earth herself as she moves around the sun. Orbital and rotational velocity are approximate. Click and drag to explore!
+
+  .row
+    .two.columns.offset-by-two
       %a{href: "http://palebluedot.herokuapp.com/world_quiz", target: "blank"}
         %img{src: "/images/carmensandiego.png", class: "image-small"}
 
     .ten.columns
       %p
         %a{href: "http://palebluedot.herokuapp.com/world_quiz", target: "blank"}
-          %strong geography quiz
+          %strong world quiz
         %br
         I love maps. There are three globes on my portfolio! Building off the last two d3 map projects, I decided to take it a step further and animate my globe, making a geography quiz that's fun and interactive. The globe image is generated from GeoJSON data. On the backend, a database of answers is tied to the countries on the map, allowing you to see what other users got right... or wrong.
 

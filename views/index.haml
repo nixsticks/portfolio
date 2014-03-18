@@ -16,17 +16,6 @@
 
   .row
     .two.columns.offset-by-two
-      %img{src: "/images/compass.png", class: "image-small"}
-      
-    .ten.columns
-      %p
-        %strong geotreasure (current project: link to come!)
-        %br
-        Geotreasure is a hybrid treasure hunt/tourism app, inspired by the concept of geocaching, that allows participants to create trails for others to follow &#8212; from anywhere in the world, to anywhere in the world. Using mobile phones or other portable devices, trail followers can check in at any given location to discover buried treasure in the form of videos, audio, images, and text left as a reward by the trail's creator.
-      %p Geotreasure is a <strong>work in progress</strong>, created as a Rails project with my partner Oliver Switzer at the Flatiron School. We work extensively with the Google Maps API. We have our database and user workflow complete, and are currently working on finishing up styling!
-
-  .row
-    .two.columns.offset-by-two
       %a{href: "http://palebluedot.herokuapp.com/solarsystem", target: "blank"}
         %img{src: "/images/planets.png", class: "image-small"}
 
@@ -52,16 +41,17 @@
 
   .row
     .two.columns.offset-by-two
-      %a{href: "http://nixsticks.github.io/starfield/stars.html", target: "blank"}
-        %img{src: "/images/starfield.gif", class: "image-small"}
+      %a{href: "http://watch-withme.herokuapp.com", target: "blank"}
+        %img{src: "/images/video.png", class: "image-small", data:{target: "video"}}
 
     .ten.columns
       %p
-        %a{href: "http://nixsticks.github.io/starfield/stars.html", target: "blank"}
-          %strong starfield
+        %a{href: "http://watch-withme.herokuapp.com", target: "blank"}
+          %strong watchwithme 
         %br
-        Despite my relative lack of knowledge in the field, I'm fascinated by astronomy and cosmology &#8212; I entered Princeton hoping to be an astrophysics major. I discovered <a href="http://astronexus.com/node/34">this</a> wonderful compilation of the Hipparcos catalog, the Yale Bright Star catalog, and the Gliese catalog, and decided to teach myself a little three.js in an attempt to visualize the data.
-        %p Starfield is a work in progress. Right now, I have a 3D visualization of all 119,000+ stars in the catalog, using a three.js particle system. Click and drag to rotate the star system; use your mouse wheel or trackpad to zoom in or out. In future, I plan to use layers for better performance, allow for click-zooming, and improve the labeling, which is currently done using sprites but might be better accomplished by integrating CSS with the three.js camera system.
+        In November, one of our instructors tried to use a YouTube video tutorial in lecture, but we were unable to watch it on the projector because the sound was too low. Although we tried to watch it in sync with him on our separate computers, it quickly became impossible to tell if we were all at the right point.
+      %p Enter watchwithme, a video-syncing application that allows you to watch YouTube videos with friends or classmates &#8212; and chat about them in the same window &#8212; on separate computers, perfectly in sync. The person who starts the room controls the video, and other watchers' videos are synchronized to it.
+      %p I used websockets and the YouTube JavaScript API to synchronize the videos, Redis to temporarily store the locations of the separate viewing rooms, and Sinatra to power the app itself.
 
   .row
     .two.columns.offset-by-two
@@ -99,20 +89,19 @@
           %strong d3 globe
         %br
         This is a simple click-and-drag rotating globe made with the amazing d3 and topojson libraries and data from the Natural Earth library. It was made on the second day I started learning d3, which should explain its simplicity. I'm fascinated with the way d3 allows you to transform data into complex visualizations &#8212; without having to be a data scientist. Expect more maps to come soon.
-
+        
   .row
     .two.columns.offset-by-two
-      %a{href: "http://watch-withme.herokuapp.com", target: "blank"}
-        %img{src: "/images/video.png", class: "image-small", data:{target: "video"}}
+      %a{href: "http://nixsticks.github.io/starfield/stars.html", target: "blank"}
+        %img{src: "/images/starfield.gif", class: "image-small"}
 
     .ten.columns
       %p
-        %a{href: "http://watch-withme.herokuapp.com", target: "blank"}
-          %strong watchwithme 
+        %a{href: "http://nixsticks.github.io/starfield/stars.html", target: "blank"}
+          %strong starfield
         %br
-        In November, one of our instructors tried to use a YouTube video tutorial in lecture, but we were unable to watch it on the projector because the sound was too low. Although we tried to watch it in sync with him on our separate computers, it quickly became impossible to tell if we were all at the right point.
-      %p Enter watchwithme, a video-syncing application that allows you to watch YouTube videos with friends or classmates &#8212; and chat about them in the same window &#8212; on separate computers, perfectly in sync. The person who starts the room controls the video, and other watchers' videos are synchronized to it.
-      %p I used websockets and the YouTube JavaScript API to synchronize the videos, Redis to temporarily store the locations of the separate viewing rooms, and Sinatra to power the app itself.
+        Despite my relative lack of knowledge in the field, I'm fascinated by astronomy and cosmology &#8212; I entered Princeton hoping to be an astrophysics major. I discovered <a href="http://astronexus.com/node/34">this</a> wonderful compilation of the Hipparcos catalog, the Yale Bright Star catalog, and the Gliese catalog, and decided to teach myself a little three.js in an attempt to visualize the data.
+        %p Starfield is a work in progress. Right now, I have a 3D visualization of all 119,000+ stars in the catalog, using a three.js particle system. Click and drag to rotate the star system; use your mouse wheel or trackpad to zoom in or out. In future, I plan to use layers for better performance, allow for click-zooming, and improve the labeling, which is currently done using sprites but might be better accomplished by integrating CSS with the three.js camera system.
 
   .row
     .two.columns.offset-by-two
@@ -126,6 +115,17 @@
         %br
         Our class decided to make a website to surprise instructor Ashley Williams, an avid user of Twitter. This website lies dormant until Ashley sends out a tweet &#8212; or until any Twitter user sends out the class in-joke hashtag #clapforashley &#8212; upon which the screen fills with the images and sounds of applause.
       %p This was a group effort; I kicked things off by setting up the backend and the oauth for Twitter, which (again!) uses websockets so the effect is instantaneous. I also wrote the JavaScript that shows the tweet and fills the background with clapping images.
+
+  .row
+    .two.columns.offset-by-two
+      %img{src: "/images/compass.png", class: "image-small"}
+      
+    .ten.columns
+      %p
+        %strong geotreasure (current project: link to come!)
+        %br
+        Geotreasure is a hybrid treasure hunt/tourism app, inspired by the concept of geocaching, that allows participants to create trails for others to follow &#8212; from anywhere in the world, to anywhere in the world. Using mobile phones or other portable devices, trail followers can check in at any given location to discover buried treasure in the form of videos, audio, images, and text left as a reward by the trail's creator.
+      %p Geotreasure is a <strong>work in progress</strong>, created as a Rails project with my partner Oliver Switzer at the Flatiron School. We work extensively with the Google Maps API. We have our database and user workflow complete, and are currently working on finishing up styling!
 
 .projects
   .sixteen.columns.title
